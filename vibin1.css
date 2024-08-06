@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+  }
+  
+  .header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Increased font size */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem; /* Increased font size */
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #1db954;
+  }
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-top: 60px;
+  }
+  
+  .hero-content {
+    animation: slideIn 1s forwards;
+    opacity: 0;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px; /* Optional: add rounded corners */
+    animation: slideInRight 1s forwards;
+    opacity: 20;
+    margin-right: 30px;
+    align-items:inherit;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

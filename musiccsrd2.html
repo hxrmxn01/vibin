@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Cards Slideshow</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .music-card-container {
+            display: flex;
+            gap: 20px;
+            overflow: hidden;
+            position: relative;
+            padding: 20px 0;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .music-card-wrapper {
+            display: flex;
+            gap: 20px;
+            animation: slide 36s linear infinite;
+        }
+
+        .music-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 180px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .music-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .music-card .info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .music-card .info h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .music-card .info p {
+            font-size: 14px;
+            margin: 0;
+            color: #666;
+        }
+
+        .music-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(calc(-100% - 20px)); /* 20px is the gap */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="music-card-container">
+    <div class="music-card-wrapper">
+        <div class="music-card">
+            <img src="STARBOY.jpg" alt="Starboy">
+            <div class="info">
+                <h3>Starboy</h3>
+                <p>Weeknd</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Shape of you.png" alt="Shape of You">
+            <div class="info">
+                <h3>Shape of You</h3>
+                <p>Ed Sheeran</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Closer.png" alt="Closer">
+            <div class="info">
+                <h3>Closer</h3>
+                <p>Chainsmokers ft Halsey</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="The more i know the better.png" alt="The Less I Know the Better">
+            <div class="info">
+                <h3>The Less I Know the Better</h3>
+                <p>Tame Impala</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Real.png" alt="Real Slim Shady">
+            <div class="info">
+                <h3>Real Slim Shady</h3>
+                <p>Eminem ft Marshall</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Drake.png" alt="God's Plan">
+            <div class="info">
+                <h3>God's Plan</h3>
+                <p>Drake</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="poet.png" alt="Late Goodbye">
+            <div class="info">
+                <h3>Late Goodbye</h3>
+                <p>Poets of the Fall</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="fantasy.png" alt="Fantasy">
+            <div class="info">
+                <h3>Fantasy</h3>
+                <p>Bazzi</p>
+            </div>
+        </div>
+        <!-- Repeat the same set of cards to create a seamless loop effect -->
+        <div class="music-card">
+            <img src="STARBOY.jpg" alt="Starboy">
+            <div class="info">
+                <h3>Starboy</h3>
+                <p>Weeknd</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Shape of you.png" alt="Shape of You">
+            <div class="info">
+                <h3>Shape of You</h3>
+                <p>Ed Sheeran</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Closer.png" alt="Closer">
+            <div class="info">
+                <h3>Closer</h3>
+                <p>Chainsmokers ft Halsey</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="The more i know the better.png" alt="The Less I Know the Better">
+            <div class="info">
+                <h3>The Less I Know the Better</h3>
+                <p>Tame Impala</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Real.png" alt="Real Slim Shady">
+            <div class="info">
+                <h3>Real Slim Shady</h3>
+                <p>Eminem ft Marshall</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="Drake.png" alt="God's Plan">
+            <div class="info">
+                <h3>God's Plan</h3>
+                <p>Drake</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="poet.png" alt="Late Goodbye">
+            <div class="info">
+                <h3>Late Goodbye</h3>
+                <p>Poets of the Fall</p>
+            </div>
+        </div>
+        <div class="music-card">
+            <img src="fantasy.png" alt="Fantasy">
+            <div class="info">
+                <h3>Fantasy</h3>
+                <p>Bazzi</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+        const cardContainer = document.querySelector('.music-card-container');
+        const cardWrapper = document.querySelector('.music-card-wrapper');
+        const cards = document.querySelectorAll('.music-card');
+        let currentPosition = 0;
+        const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+        const totalWidth = cardWidth * cards.length;
+        const animationDuration = 36; // seconds
+
+        // Set the width of the card wrapper to accommodate all cards twice (for seamless loop)
+        cardWrapper.style.width = `${totalWidth * 2}px`;
+
+        // Clone cards and append them to the wrapper for seamless looping
+        cards.forEach(card => {
+            const clone = card.cloneNode(true);
+            cardWrapper.appendChild(clone);
+        });
+
+        // Function to move cards
+        function animateCards() {
+            currentPosition -= cardWidth / (animationDuration * 60); // pixels per frame
+            cardWrapper.style.transform = `translateX(${currentPosition}px)`;
+
+            if (-currentPosition >= totalWidth) {
+                currentPosition = 0; // Reset position for seamless loop
+            }
+
+            requestAnimationFrame(animateCards);
+        }
+
+        // Start the animation
+        animateCards();
+
+        // Pause animation on hover
+        cardContainer.addEventListener('mouseover', () => {
+            cardWrapper.style.animationPlayState = 'paused';
+        });
+
+        // Resume animation on mouse out
+        cardContainer.addEventListener('mouseout', () => {
+            cardWrapper.style.animationPlayState = 'running';
+        });
+    });
+</script>
+
+</body>
+</html>
